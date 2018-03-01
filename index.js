@@ -9,7 +9,7 @@ const numlits = require('./data/numlit').numlits;
 const others = require('./data/other').others;
 const predicates = require('./data/predicate').predicates;
 
-const data = [arithmetics, identifiers, keywords, logicals, numlits, others, predicates];
+const data = [arithmetics, identifiers, keywords, logicals, numlits, others, predicates, [' ']];
 const linecount = process.argv[3];
 const linelength = process.argv[4];
 let output = "";
@@ -28,10 +28,7 @@ for (let linenum = 0; linenum < linecount; linenum++) {
 			typeselector = Math.floor(Math.random() * data.length);
 		}
 
-		let tokenselector = Math.floor(Math.random() * data[typeselector].length);
-		while (tokenselector === previoustoken) {
-			tokenselector = Math.floor(Math.random() * data[typeselector].length);
-		} 
+		const tokenselector = Math.floor(Math.random() * data[typeselector].length);
 
 		previoustype = typeselector;
 		previoustoken = tokenselector;
