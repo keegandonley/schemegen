@@ -46,11 +46,11 @@ fs.writeFileSync(inputfile, output);
 const testRun = spawn(executable, [inputfile]);
 
 testRun.stdout.on('data', (data) => {
-	console.log(`stdout: ${data}`);
+	console.log(`stdout: \n${data}`);
 });
 
 testRun.stderr.on('data', (data) => {
-	console.log(`stderr: ${data}`);
+	console.log(`stderr: \n${data}`);
 });
 
 testRun.on('close', (code) => {
