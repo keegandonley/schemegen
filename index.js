@@ -34,6 +34,8 @@ for (let linenum = 0; linenum < linecount; linenum++) {
 		previoustoken = tokenselector;
 
 		output += data[typeselector][tokenselector];
+
+		if (typeselector === 2) output += ' ';
 	}
 	output += "\n";
 }
