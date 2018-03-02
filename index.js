@@ -15,8 +15,11 @@ const linelength = process.argv[4];
 let output = "";
 const inputfile = "temp.ss";
 const executable = process.argv[2];
-
-
+const preserve = process.argv.indexOf("-preserve") > -1
+	? true
+	: process.argv.indexOf("--p") > -1
+		? true
+		: false;
 
 for (let linenum = 0; linenum < linecount; linenum++) {
 	let previoustype = -1;
@@ -55,5 +58,5 @@ testRun.stderr.on('data', (data) => {
 
 testRun.on('close', (code) => {
 	console.log(`child process exited with code ${code}`);
-	fs.unlinkSync(inputfile);
+	if (!preserve) fs.unlinkSync(inputfile);
 });
