@@ -5,5 +5,6 @@ exports.predicates = [
 	"zero?",
 	"null?",
 	"char?",
-	"string?"
+	"string?",
+	"notapred?"
 ];
