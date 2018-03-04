@@ -1,0 +1,5 @@
+exports.invalids = [
+	"?",
+	".ab",
+	"?foobar"
+];

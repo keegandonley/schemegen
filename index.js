@@ -8,8 +8,11 @@ const logicals = require('./data/logical').logicals;
 const numlits = require('./data/numlit').numlits;
 const others = require('./data/other').others;
 const predicates = require('./data/predicate').predicates;
+const stringlits = require('./data/stringlit').stringlits;
+const invalids = require('./data/invalid').invalids;
 
-const data = [arithmetics, identifiers, keywords, logicals, numlits, others, predicates, [' ']];
+
+const data = [arithmetics, identifiers, keywords, logicals, numlits, others, predicates, [' '], stringlits, invalids];
 const linecount = process.argv[3];
 const linelength = process.argv[4];
 let output = "";
