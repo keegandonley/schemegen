@@ -9,5 +9,8 @@ exports.keywords = [
 	"or",
 	"not",
 	"define",
-	"else"
+	"else",
+	"display",
+	"newline",
+	"modulo"
 ];
