@@ -17,4 +17,4 @@ To prevent the temporary output file from being cleared, run with the flag `--p`
 
 An example of generated code can be found in temp.ss.
 
-This program is only useful for testing a lexial analyzer for scheme - the generated code is not syntactically correct and won't yet work with a syntactic analyzer.
+**Caveat**: *This program is only useful for testing a lexial analyzer for scheme - the generated code is not syntactically correct and won't yet work with a syntactic analyzer.*
