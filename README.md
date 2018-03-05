@@ -13,6 +13,8 @@ Usage:
 3. Run your executable: `node ./index.js <path-to-executable> <lines-to-generate> <tokens-per-line>`. For example: `node ./index.js ../P1.out 10 10`
 4. The output of your program will be displayed with randomly generated input!
 
-To prevent the temporary output file from being cleared, run with the flag `--p` or `-preserve`. This can be used to debgug the program because the input that was used is saved until the program is run again.
+To prevent the temporary output file from being cleared, run with the flag `--p` or `-preserve`. This can be used to debug the executable program because the input that was used is saved until the program is run again.
 
-An example of generated code can be found in temp.ss
+An example of generated code can be found in temp.ss.
+
+This program is only useful for testing a lexial analyzer for scheme - the generated code is not syntactically correct and won't yet work with a syntactic analyzer.
